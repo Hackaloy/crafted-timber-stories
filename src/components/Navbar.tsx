@@ -20,11 +20,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-cream bg-opacity-90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-cream bg-opacity-95 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
           <h1 className="text-2xl font-serif font-bold text-wood-walnut">
-            WoodWorks<span className="text-wood-oak">Studio</span>
+            Avb<span className="text-wood-oak">Carpentry</span>
           </h1>
         </a>
 

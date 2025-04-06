@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-cream py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="section-title">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-md shadow-md">
               <div>
                 <label htmlFor="name" className="block mb-2 font-medium">Name</label>
                 <input
@@ -104,19 +104,19 @@ const Contact = () => {
                 />
               </div>
               
-              <button type="submit" className="btn-primary w-full">
+              <button type="submit" className="btn-primary w-full hover:shadow-lg transition-shadow">
                 Get a Custom Quote
               </button>
             </form>
           </div>
           
           <div className="flex flex-col justify-between">
-            <div>
+            <div className="bg-white p-8 rounded-md shadow-md">
               <h3 className="text-2xl font-serif font-semibold mb-6 text-wood-walnut">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-full flex items-center justify-center text-wood-walnut mr-4">
+                  <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-md flex items-center justify-center text-wood-walnut mr-4">
                     <Phone size={20} />
                   </div>
                   <div>
@@ -126,17 +126,17 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-full flex items-center justify-center text-wood-walnut mr-4">
+                  <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-md flex items-center justify-center text-wood-walnut mr-4">
                     <Mail size={20} />
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-muted-foreground">info@woodworksstudio.com</p>
+                    <p className="text-muted-foreground">info@avbcarpentry.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-full flex items-center justify-center text-wood-walnut mr-4">
+                  <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-md flex items-center justify-center text-wood-walnut mr-4">
                     <MapPin size={20} />
                   </div>
                   <div>
@@ -147,10 +147,21 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="mt-12 lg:mt-0 h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-              {/* In a real implementation, you would embed an actual map here */}
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                <p className="text-muted-foreground">Map Placeholder</p>
+            <div className="mt-8 bg-white p-8 rounded-md shadow-md">
+              <h3 className="text-2xl font-serif font-semibold mb-4 text-wood-walnut">Business Hours</h3>
+              <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <h4 className="font-medium">Monday - Friday</h4>
+                  <p className="text-muted-foreground">9:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                  <h4 className="font-medium">Saturday</h4>
+                  <p className="text-muted-foreground">10:00 AM - 4:00 PM</p>
+                </div>
+                <div className="col-span-2 mt-2">
+                  <h4 className="font-medium">Sunday</h4>
+                  <p className="text-muted-foreground">Closed</p>
+                </div>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import { Sofa, ChefHat, Paintbrush, Home } from 'lucide-react';
 const Services = () => {
   return (
     <section id="services" className="bg-parchment py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="section-title">Our Services</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ const Services = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <a href="#contact" className="btn-primary">
+          <a href="#contact" className="btn-primary hover:shadow-lg transition-shadow">
             Discuss Your Project
           </a>
         </div>

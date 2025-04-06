@@ -12,11 +12,11 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, description, icon, delay }: ServiceCardProps) => {
   return (
     <div 
-      className="bg-cream p-8 rounded-lg shadow-md border border-wood-oak border-opacity-10 hover:shadow-xl transition-all duration-300 h-full flex flex-col opacity-0 animate-slide-up"
+      className="bg-cream p-8 rounded-md shadow-md border border-wood-oak border-opacity-10 hover:shadow-xl transition-all duration-300 h-full flex flex-col opacity-0 animate-slide-up group"
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="flex items-center mb-4">
-        <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-full flex items-center justify-center text-wood-walnut">
+      <div className="mb-4">
+        <div className="w-12 h-12 bg-wood-oak bg-opacity-10 rounded-md flex items-center justify-center text-wood-walnut group-hover:bg-wood-oak group-hover:text-white transition-colors duration-300">
           {icon}
         </div>
       </div>

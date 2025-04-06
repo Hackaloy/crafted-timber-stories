@@ -54,8 +54,8 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="bg-cream py-24">
-      <div className="container mx-auto px-6">
+    <section id="gallery" className="bg-cream py-28 md:py-32">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="section-title">Our Portfolio</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
