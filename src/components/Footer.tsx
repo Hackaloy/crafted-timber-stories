@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
-            <h3 className="text-3xl font-serif mb-6">Avb<span className="text-wood-oak">Carpentry</span></h3>
+            <h3 className="text-3xl font-serif mb-6 text-cream">Avb<span className="text-wood-oak">Carpentry</span></h3>
             <p className="mb-6 text-cream text-opacity-80">
               Crafting custom wooden pieces with traditional craftsmanship and modern design sensibilities.
             </p>
