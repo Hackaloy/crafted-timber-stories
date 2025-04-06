@@ -1,6 +1,6 @@
 
 import ServiceCard from './ServiceCard';
-import { Furniture, Kitchen, Paintbrush, Home } from 'lucide-react';
+import { Sofa, ChefHat, Paintbrush, Home } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -17,13 +17,13 @@ const Services = () => {
           <ServiceCard 
             title="Custom Furniture" 
             description="Bespoke pieces designed for your space, from dining tables to statement shelving, crafted with the finest hardwoods."
-            icon={<Furniture size={24} />}
+            icon={<Sofa size={24} />}
             delay={0.1}
           />
           <ServiceCard 
             title="Kitchen Installations" 
             description="Handcrafted cabinets, islands, and countertops that combine functionality with timeless aesthetic appeal."
-            icon={<Kitchen size={24} />}
+            icon={<ChefHat size={24} />}
             delay={0.2}
           />
           <ServiceCard 
