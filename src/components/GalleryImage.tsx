@@ -21,13 +21,14 @@ const GalleryImage = ({ src, alt, className = "" }: GalleryImageProps) => {
           src={src} 
           alt={alt} 
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          loading="lazy"
         />
       </div>
 
       {/* Modern Lightbox Modal */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-fade-in"
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         >
           <div 

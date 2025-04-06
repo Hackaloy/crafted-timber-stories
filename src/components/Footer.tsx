@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
-            <h3 className="text-3xl font-serif mb-6">WoodWorks<span className="text-wood-oak">Studio</span></h3>
+            <h3 className="text-3xl font-serif mb-6">Avb<span className="text-wood-oak">Carpentry</span></h3>
             <p className="mb-6 text-cream text-opacity-80">
               Crafting custom wooden pieces with traditional craftsmanship and modern design sensibilities.
             </p>
@@ -60,7 +59,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-cream border-opacity-20 text-center md:text-left md:flex md:justify-between md:items-center">
           <p className="text-cream text-opacity-70">
-            &copy; {new Date().getFullYear()} WoodWorks Studio. All rights reserved.
+            &copy; {new Date().getFullYear()} Avb Carpentry. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-cream text-opacity-70 hover:text-wood-oak mr-6 transition-colors">Privacy Policy</a>
